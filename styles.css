@@ -1,0 +1,37 @@
+body {
+    font-family: poppins;
+}
+
+header {
+    background-image: url(./Hero\ background\ images.png);
+}
+
+div {
+    background-color: #0000006E;
+    color: white;
+
+}
+
+article {
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    padding: 1.8rem;
+    border: 2px solid #C3BCA4;
+} 
+
+section {
+    background-color: #FFC700;
+}
+
+footer {
+    color: #FFFFFF;
+    background-color: black;
+}
+
+
+
+
+
+
