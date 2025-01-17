@@ -1,9 +1,11 @@
 body {
     font-family: poppins;
+    margin: 0%;
+    padding: 0%;
 }
 
 header {
-    background-image: url(./Hero\ background\ images.png);
+    background-image: url(./Hero\ background\ images.png); 
 }
 
 div {
@@ -12,14 +14,80 @@ div {
 
 }
 
-article {
-    width: 300px;
-    height: 600px;
+.zoekbalken {
+    margin-left: 60px;
+}
+
+.zoekknop {
+    background: #FFC700;
+    border-radius: 0px 623.94px 623.94px 0px;
+    border-color: #FFC700;
+
+}
+
+.vodk-button {
+width: 190px;
+height: 26px;
+background-color: #FFC700;
+border-color: #FFC700;
+border-radius: 8px;
+}
+
+.filter {
     border-radius: 20px;
     background: #FFFFFF;
     padding: 1.8rem;
     border: 2px solid #C3BCA4;
+    filter: drop-shadow(0px 9.97958px 19.9592px rgba(0, 0, 0, 0.1));
+    color:black;
+}
+
+.beroepen {
+    display:grid;
+}
+
+.afstand {
+    display: grid;
+}
+
+.minbedrag,.maxbedrag {
+width: 100px;
+}
+
+.filterbutton {
+    color: #FFFFFF;
+    background-color: #C3BCA4;
+    width:150px;
+    height:25px;
+    border-radius: 8px;
+    border-color: #C3BCA4;
+}
+
+.filterresultaten {
+    color: #FFFFFF;
+    background-color: #C3BCA4;
+    width:250px;
+    height:25px;
+    border-radius: 8px;
+    border-color: #C3BCA4;
+    margin-left: 15px;
+}
+
+article {
+    width: 290px;
+    height: 400px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    padding: 1.8rem;
+    border: 2px solid #C3BCA4;
+    filter: drop-shadow(0px 9.97958px 19.9592px rgba(0, 0, 0, 0.1));
+
 } 
+
+
+main {
+    padding: 10px;
+}
 
 section {
     background-color: #FFC700;
@@ -29,6 +97,8 @@ footer {
     color: #FFFFFF;
     background-color: black;
 }
+
+
 
 
 

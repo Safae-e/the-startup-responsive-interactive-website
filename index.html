@@ -23,28 +23,29 @@
     </header>
 
     <main>
-        <form>
+        <form class="zoekbalken">
             <legend>Wat zoek je voor werk?</legend>
-                <input type="text" placeholder="Kies een beroep...">
+                <label for="kies beroep"><input id="plaats/postcode" type="text" placeholder="Kies een beroep..."></label>
               
             <legend>Waar zoek je?</legend>
-                <input type="text" placeholder="Voer plaats / postcode in">
-                <button type="submit">Zoeken</button>
+                <label for="plaats/postcode"> <input id="plaats/postcode" type="text" placeholder="Voer plaats / postcode in"></label>
+                <button class="zoekknop" type="submit">Zoeken</button>
         </form>
         
-        <button>Filter Resultaten</button>
-
-        <div>
-            <form>
+        <button class="filterbutton" onclick="myFunction()">Filter</button>
+        <button class="vodk-button">Vacatures op de kaart</button>
+        
+        <div id="filter" class="filter" hidden>
+            <form class="beroepen">
                 <legend>Beroepen</legend>
                 
-                <label><input type="checkbox">Schoonmaker</label>
-                <label><input type="checkbox">Glazenwasser</label>
-                <label><input type="checkbox">Gevelreiniger</label>
-                <label><input type="checkbox">Vloerspecialist</label>
+                <label for="Schoonmaker"><input id="Schoonmaker" type="checkbox">Schoonmaker</label>
+                <label for="Glazenwasser"><input id="Glazenwasser" type="checkbox">Glazenwasser</label>
+                <label for="Gevelreiniger"><input id="Gevelreiniger" type="checkbox">Gevelreiniger</label>
+                <label for="Vloerspecialist"><input id="Vloerspecialist" type="checkbox">Vloerspecialist</label>
             </form>
 
-            <form>
+            <form class="afstand">
                 <label id="afstand">Afstand</label>
 
                     <select name="afstand" id="afstand"> <!--name: is needed to reference the form data after the form is submitted. id:is needed to associate the drop-down list with a label. -->
@@ -60,18 +61,16 @@
                     </select>
             </form>
 
-            <form>
+            <form class="Salaris">
                 <legend>Salaris</legend>
 
-                €<label><input type="number">tot</label>
-                <label><input type="number">p/u</label>
+                €<label for="minbedrag"><input class="minbedrag" id="minbedrag" type="number">tot</label>
+                <label for="maxbedrag"><input class="maxbedrag" id="maxbedrag" type="number">p/u</label>
             </form>
 
-            <button>FIlter Resultaten</button>
+            <button class="filterresultaten">Filter Resultaten</button>
         </div>
 
-        <button>Vacatures op de kaart</button>
-        
         <article>
             <h3>Regio Manager Amsterdam</h3>
                 <img><?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z" stroke="#FFC700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" stroke="#FFC700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
