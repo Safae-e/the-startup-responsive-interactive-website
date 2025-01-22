@@ -22,7 +22,6 @@ header {
     display: none;
 }
 
-
 nav {
     display:flex;
     padding: 10px 30px;
@@ -101,6 +100,10 @@ li {
     word-wrap: normal;
 }
 
+fieldset {
+   border: none;
+}
+
 .zoekbalken {
     margin-left: 60px;
 }
@@ -109,7 +112,6 @@ li {
     background: #FFC700;
     border-radius: 0px 623.94px 623.94px 0px;
     border-color: #FFC700;
-
 }
 
 .vodk-button {
@@ -138,7 +140,7 @@ border-radius: 8px;
 }
 
 .minbedrag,.maxbedrag {
-width: 100px;
+    width: 100px;
 }
 
 .filterbutton {
@@ -194,9 +196,12 @@ article {
     color:black;
     text-decoration: none;
     padding: 0.8em 1.5em;
-
 }
 
+.meer-vacatures {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
 
 main {
     padding: 10px;
@@ -216,13 +221,35 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-}
 
+    .filterbutton {
+        transform: scale(1.5);
+        margin-left:150px ;
+    }
+
+    .vodk-button {
+        transform: scale(1.5);
+        margin-left: 150px;
+    
+    }
+
+    .zoekbalken {
+        display: flex;
+        justify-content: center;
+        transform: scale(1.5);
+    }
+
+}
 
 @media (min-width:1050px) {
     .vacature-lijst {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+
+    .filterbutton, .vodk-button {
+        margin-left: 350px;
     }
 }
 
