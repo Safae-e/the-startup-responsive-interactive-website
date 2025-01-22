@@ -2,16 +2,103 @@ body {
     font-family: poppins;
     margin: 0%;
     padding: 0%;
+    height: 100%;
+    width: 100%;
 }
 
 header {
     background-image: url(./Hero\ background\ images.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
 }
 
-div {
+.menu-button {
+    background-color:#FFC700;
+    border-radius: 7px;
+    border-color: #FFC700;
+    color:black;
+    display: none;
+}
+
+
+nav {
+    display:flex;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 80px;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media (max-width: 790px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: black;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li{
+        padding: 20px;
+    }
+
+    .menu-button{
+        display: block;
+    }
+    #menuList {
+        transition: all 0.5s;
+    }
+}
+/* nav {
+    background:#0000006E;
+    display: none;
+}
+
+nav.show-menu {
+ display: block;
+}
+
+li {
+  list-style-type: none;
+
+}
+
+.a-menu {
+  color: white;
+  text-decoration: none;
+} */
+
+.tekst{
     background-color: #0000006E;
     color: white;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px ;
+    word-wrap: normal;
 }
 
 .zoekbalken {
@@ -74,32 +161,70 @@ width: 100px;
     margin-top: 25px;
 }
 
+.vacature-lijst {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
 article {
-    width: 290px;
-    height: 400px;
+    width: 300px;
+    height: 350px;
     border-radius: 20px;
     background: #FFFFFF;
     padding: 1.8rem;
     border: 2px solid #C3BCA4;
     filter: drop-shadow(0px 9.97958px 19.9592px rgba(0, 0, 0, 0.1));
-
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 } 
+
+@media (min-width:440px) {
+    article {
+        width: 300px;
+    }
+}
+
+.art-img {
+    display:flex;
+}
+
+.a-article {
+    background:#FFC700;
+    border-radius: 7px;
+    color:black;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+
+}
 
 
 main {
     padding: 10px;
 }
 
-section {
+.tekts-footer {
     background-color: #FFC700;
 }
 
-footer {
+.p-footer{
     color: #FFFFFF;
     background-color: black;
 }
 
+@media (min-width: 680px) {
+    .vacature-lijst {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
+
+@media (min-width:1050px) {
+    .vacature-lijst {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 
 

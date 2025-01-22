@@ -13,3 +13,23 @@ function myFunction() {
       filter.style.display = "none";
     }
   }
+
+//   let button = document.querySelector('button');
+// let navigation = document.querySelector('nav');
+
+// button.addEventListener("click", function(){
+//   navigation.classList.toggle('show-menu');
+// })
+
+let menuList = document.getElementById("menuList")
+
+
+function toggleMenu(){
+  if (menuList.style.maxHeight == "0px")
+  {
+    menuList.style.maxHeight = "300px";
+  }
+  else {
+    menuList.style.maxHeight = "0px";
+  }
+}
