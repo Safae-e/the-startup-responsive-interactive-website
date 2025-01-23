@@ -29,8 +29,7 @@ Ik heb 2 interacties gemaakt. Een menu dat open en dicht klapt een een filtermen
 https://github.com/user-attachments/assets/9face821-7462-45dd-9c36-652bca21c06f
 
 Link naar mijn website
-https://safae-e.github.io/the-startup-responsive-interactive-website/
-## Kenmerken
+https://safae-e.github.io/the-startup-responsive-interactive-website/## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
 ## Bronnen
